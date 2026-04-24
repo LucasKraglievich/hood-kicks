@@ -26,7 +26,7 @@ Tienda de zapatillas urbanas desarrollada como proyecto final del curso de JavaS
 
 ## Cómo correrlo localmente
 
-Abrir el proyecto con una extensión tipo Live Server para que el fetch al archivo data.json funcione sin error de CORS.
+Abrir el proyecto con una extensión tipo `Live Server` para que el `fetch` al archivo `data.json` funcione sin error de CORS.
 
 ## Conceptos aplicados
 
