@@ -2,10 +2,6 @@
 
 Tienda de zapatillas urbanas desarrollada como proyecto final del curso de JavaScript en Coderhouse. Simula una tienda online completa con carrito de compras, filtros por marca y proceso de checkout.
 
-## Demo en vivo
-
-🔗 [Ver proyecto](https://TU-USUARIO.github.io/hood-kicks/)
-
 ## Funcionalidades
 
 - 🛒 Carrito de compras con panel lateral deslizable
@@ -19,9 +15,9 @@ Tienda de zapatillas urbanas desarrollada como proyecto final del curso de JavaS
 
 ## Tecnologías
 
-- HTML5 semántico
-- CSS3 (variables, flexbox, grid, animaciones)
-- JavaScript ES6+ (async/await, arrow functions, destructuring, spread operator)
+- HTML5
+- CSS3
+- JavaScript ES6+
 
 ## Librerías externas
 
@@ -38,17 +34,6 @@ Tienda de zapatillas urbanas desarrollada como proyecto final del curso de JavaS
 3. Usar la extensión **Live Server** y hacer click derecho en `index.html` → *Open with Live Server*
 
 > ⚠️ Es necesario usar Live Server (o cualquier servidor local) para que el `fetch` a `data.json` funcione sin errores de CORS.
-
-## Estructura del proyecto
-
-```
-hood-kicks/
-├── index.html
-├── app.js
-├── data.json
-├── style.css
-└── README.md
-```
 
 ## Conceptos aplicados
 
