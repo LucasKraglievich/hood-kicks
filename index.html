@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de zapatillas urbanas: Nike, Adidas, Converse, Vans y más. Las mejores sneakers con ofertas exclusivas.">
+    <meta name="keywords" content="zapatillas, sneakers, urbanas, Nike, Adidas, Converse, Vans, New Balance, Puma">
+    <meta name="author" content="Lucas Kraglievich">
+    <title>HOOD KICKS | Sneakers Urbanas</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Librerías externas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header" role="banner">
+        <nav class="navbar container" role="navigation" aria-label="Navegación principal">
+            <a href="#" class="logo" title="HOOD KICKS Home">HOOD <span>KICKS</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <!-- Carrito ícono -->
+            <button class="carrito-btn" id="btn-carrito" aria-label="Abrir carrito" title="Ver carrito">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span class="carrito-count" id="carrito-count">0</span>
+            </button>
+        </nav>
+
+        <!-- Panel del carrito -->
+        <div id="carrito-panel" class="carrito-panel" role="region" aria-label="Carrito de compras">
+            <div class="carrito-header">
+                <h3>Tu Carrito</h3>
+                <button class="carrito-cerrar" id="carrito-cerrar" aria-label="Cerrar carrito">✕</button>
+            </div>
+            <table id="lista-carrito">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="carrito-acciones">
+                <button id="vaciar-carrito" class="btn-vaciar" aria-label="Vaciar carrito">Vaciar</button>
+                <button id="finalizar-compra" class="btn-finalizar" aria-label="Finalizar compra">Finalizar Compra</button>
+            </div>
+        </div>
+        <div class="carrito-overlay" id="carrito-overlay"></div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-label="Banner principal">
+        <div class="hero-contenido container">
+            <div class="hero-texto">
+                <span class="hero-tag">Nueva Colección 2025</span>
+                <h1 class="hero-titulo">DEFINE TU<br><span class="highlight">ESTILO</span></h1>
+                <p class="hero-subtitulo">Las mejores sneakers urbanas de las marcas más icónicas del mundo.</p>
+                <a href="#productos" class="btn-primary">Ver Colección</a>
+            </div>
+            <div class="hero-imagen">
+                <div class="hero-img-wrapper">
+                    <img src="https://acdn-us.mitiendanube.com/stores/194/524/products/img_0280-51ba5a7be06a7d461d17501210399758-480-0.webp" alt="Zapatillas urbanas premium" title="Colección HOOD KICKS 2025">
+                    <div class="hero-badge">-30%<br><small>OFF</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARCAS STRIP ===== -->
+    <section class="marcas-strip" id="marcas" aria-label="Marcas disponibles">
+        <div class="container marcas-lista">
+            <span>NIKE</span>
+            <span class="separador">·</span>
+            <span>ADIDAS</span>
+            <span class="separador">·</span>
+            <span>CONVERSE</span>
+            <span class="separador">·</span>
+            <span>VANS</span>
+            <span class="separador">·</span>
+            <span>NEW BALANCE</span>
+            <span class="separador">·</span>
+            <span>PUMA</span>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTOS ===== -->
+    <main role="main">
+        <section class="productos-seccion container" id="productos">
+            <div class="productos-header">
+                <h2>Colección <span class="highlight">Completa</span></h2>
+                <p>Encontrá tu par ideal entre nuestras zapatillas de edición limitada y clásicos que nunca pasan de moda.</p>
+            </div>
+
+            <!-- Filtros por marca -->
+            <div class="filtros" role="group" aria-label="Filtrar por marca">
+                <button class="btn-filtro activo" data-filter="todos">Todos</button>
+                <button class="btn-filtro" data-filter="Nike">Nike</button>
+                <button class="btn-filtro" data-filter="Adidas">Adidas</button>
+                <button class="btn-filtro" data-filter="Converse">Converse</button>
+                <button class="btn-filtro" data-filter="Vans">Vans</button>
+                <button class="btn-filtro" data-filter="New Balance">New Balance</button>
+                <button class="btn-filtro" data-filter="Puma">Puma</button>
+            </div>
+
+            <!-- Grid de productos -->
+            <div class="grid-productos" id="grid-productos">
+                <!-- Los productos se cargan dinámicamente con JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-contenido container">
+            <div class="footer-brand">
+                <span class="logo">HOOD <span>KICKS</span></span>
+                <p>Tu destino para las mejores sneakers urbanas. Autenticidad garantizada.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Marcas</h4>
+                <ul>
+                    <li><a href="#">Nike</a></li>
+                    <li><a href="#">Adidas</a></li>
+                    <li><a href="#">Converse</a></li>
+                    <li><a href="#">Vans</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <p>¿Tenés dudas sobre algún modelo? Escribinos y te asesoramos para encontrar tu zapatilla perfecta.</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2025 HOOD KICKS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

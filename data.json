@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "marca": "Nike",
+        "nombre": "Nike Air Force 1 '07",
+        "descripcion": "El clásico de clásicos. Cuero premium y suela Air que nunca pasa de moda.",
+        "precioOriginal": 180,
+        "precio": 129,
+        "imagen": "https://nikearprod.vtexassets.com/arquivos/ids/155417-1600-1600?width=1600&height=1600&aspect=true"
+    },
+    {
+        "id": 2,
+        "marca": "Nike",
+        "nombre": "Nike Dunk Low Retro",
+        "descripcion": "Diseño retro con colores contrastantes. Ícono de la cultura urbana.",
+        "precioOriginal": 210,
+        "precio": 149,
+        "imagen": "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwdc08ec94/products/NIDV0833-115/NIDV0833-115-1.JPG"
+    },
+    {
+        "id": 3,
+        "marca": "Adidas",
+        "nombre": "Adidas Samba Messi",
+        "descripcion": "Originalmente creada para el fútbol en interiores, hoy es la cabra de la calle.",
+        "precioOriginal": 160,
+        "precio": 109,
+        "imagen": "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwcb19f8d8/products/ADJP7845/ADJP7845-1.JPG"
+    },
+    {
+        "id": 4,
+        "marca": "Adidas",
+        "nombre": "Adidas Stan Smith",
+        "descripcion": "Minimalismo total. La zapatilla de tenis más vendida de la historia.",
+        "precioOriginal": 130,
+        "precio": 89,
+        "imagen": "https://assets.adidas.com/images/w_600,f_auto,q_auto/69721f2e7c934d909168a80e00818569_9366/Zapatillas_Stan_Smith_Blanco_M20324_01_standard.jpg"
+    },
+    {
+        "id": 5,
+        "marca": "Converse",
+        "nombre": "Converse Chuck 70 Hi",
+        "descripcion": "La versión premium del Chuck original. Canvas grueso y construcción artesanal.",
+        "precioOriginal": 120,
+        "precio": 84,
+        "imagen": "https://sportotalar.vtexassets.com/arquivos/ids/600813/169953C-1316-BLACK-WHITE-EGRET_1.png?v=638666870309500000"
+    },
+    {
+        "id": 6,
+        "marca": "Vans",
+        "nombre": "Vans Old Skool",
+        "descripcion": "Raya lateral icónica, suela waffle. Nacida en el skate, adoptada por todos.",
+        "precioOriginal": 110,
+        "precio": 79,
+        "imagen": "https://images.unsplash.com/photo-1680204101074-95e967225fe6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 7,
+        "marca": "New Balance",
+        "nombre": "New Balance 550",
+        "descripcion": "Look retro con materiales premium. Colaboraciones que la pusieron en el mapa.",
+        "precioOriginal": 150,
+        "precio": 110,
+        "imagen": "https://production.cdn.vaypol.com/variants/6eebfy8iewl24452kprfecqjlyiv/e82c8d6171dd25bb538f2e7263b5bc7dfc6a79352d85923074be76df53fbc6f4"
+    },
+    {
+        "id": 8,
+        "marca": "Puma",
+        "nombre": "Puma Suede Classic XXI",
+        "descripcion": "Gamuza icónica desde 1968. Símbolo de la cultura hip-hop y el breakdance.",
+        "precioOriginal": 100,
+        "precio": 69,
+        "imagen": "https://chelseaio.vtexassets.com/arquivos/ids/527279-800-auto?v=638935428591470000&width=800&height=auto&aspect=true"
+    }
+]
