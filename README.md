@@ -26,14 +26,7 @@ Tienda de zapatillas urbanas desarrollada como proyecto final del curso de JavaS
 
 ## Cómo correrlo localmente
 
-1. Clonar el repositorio
-   ```bash
-   git clone https://github.com/TU-USUARIO/hood-kicks.git
-   ```
-2. Abrir la carpeta en VS Code
-3. Usar la extensión **Live Server** y hacer click derecho en `index.html` → *Open with Live Server*
-
-> ⚠️ Es necesario usar Live Server (o cualquier servidor local) para que el `fetch` a `data.json` funcione sin errores de CORS.
+Abrir el proyecto con una extensión tipo Live Server para que el fetch al archivo data.json funcione sin error de CORS.
 
 ## Conceptos aplicados
 
